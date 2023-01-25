@@ -84,6 +84,13 @@ canvas {
     bottom: -2rem;
 }
 
-
-
-
+@media screen and (max-width: 432px) {
+    .links{
+        column-gap: 10rem;
+    }
+}
+@media screen and (max-width: 390px) {
+    .links{
+        column-gap: 6rem;
+    }
+}
