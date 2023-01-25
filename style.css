@@ -90,6 +90,13 @@ canvas {
     flex-wrap: wrap;
 }
 
+.game-link{
+    width: max-content !important;
+    display: flex;
+    gap: 1rem;
+}
+
+
 @media screen and (max-width: 432px) {
     .links{
         column-gap: 12rem;
