@@ -13,8 +13,9 @@ body {
     height: 100vh;
     flex-direction: column;
 }
-h2{
+h1{
     margin-bottom: 1rem;
+
 }
 
 .grid {
@@ -54,4 +55,31 @@ h2{
 /* Add some css for winning cells */
 .cell.win {
     background-color: #7FFF00;
+}
+
+
+#result {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+#reset-button {
+    margin-top: 10px;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -3px 3px 0 black;
+    transform: skewY(3deg);
+    transition: 400ms ease;
+    color: black;
+
+}
+
+#reset-button:focus{
+    box-shadow: -0px 0px 0 black;
+    translate: -4px 4px;
 }

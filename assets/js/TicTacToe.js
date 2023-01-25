@@ -12,6 +12,8 @@ var winCombinations = [
     [0, 4, 8],
     [2, 4, 6]
 ];
+var result = document.getElementById("result");
+var resetButton = document.getElementById("reset-button");
 
 for (var i = 0; i < cells.length; i++) {
     cells[i].addEventListener("click", function(e) {
@@ -22,6 +24,7 @@ for (var i = 0; i < cells.length; i++) {
         }
     });
 }
+resetButton.addEventListener("click", reset);
 
 function togglePlayer() {
     currentPlayer = currentPlayer === "x" ? "o" : "x";
@@ -43,8 +46,17 @@ function checkWin() {
             cells[a].classList.add("win");
             cells[b].classList.add("win");
             cells[c].classList.add("win");
-            alert("Player " + currentPlayer + " wins!");
+            result.textContent = "Player " + currentPlayer + " wins!";
         }
     }
 }
 
+function reset() {
+    for (var i = 0; i < cells.length; i++) {
+        cells[i].textContent = "";
+        cells[i].classList.remove("win");
+    }
+    result.textContent = "";
+    gameOver = false;
+    currentPlayer = "x";
+}
