@@ -58,7 +58,7 @@ canvas {
     flex-wrap: wrap;
 }
 
-.links a{
+.button-links{
     border: 2px solid black;
     padding: 5px;
     border-radius: 5px;
@@ -72,12 +72,12 @@ canvas {
     color: black;
 }
 
-.links a:hover{
+.button-links:hover{
     box-shadow: -0px 0px 0 black;
     translate: -4px 4px;
 }
 
-.links a:after{
+.button-links:after{
     content: attr(name);
     font-weight: 500;
     position: absolute;
