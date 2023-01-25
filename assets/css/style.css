@@ -84,6 +84,12 @@ canvas {
     bottom: -2rem;
 }
 
+.autoType{
+    margin: 2px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 @media screen and (max-width: 432px) {
     .links{
         column-gap: 10rem;
