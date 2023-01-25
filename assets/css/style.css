@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
     text-decoration: none !important;
+    user-select: none !important;
 }
 
 html{
