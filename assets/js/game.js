@@ -64,7 +64,7 @@ function geterateObstacles(){
         obstacle.style.width = obstacleWidth+'px';
         obstacle.style.height = obstacleHeight+'px';
         if(characterRight >= obstacleRight - characterWidth && characterRight <= obstacleRight + obstacleWidth && characterBottom <= obstacleBottom+obstacleHeight){
-                alert("Do you wish to restart?")
+                alert("Your score is: "+ score);
                 clearInterval(obstacleInterval);
                 clearTimeout(obstacleTimeout);
                 location.reload()
@@ -79,8 +79,9 @@ geterateObstacles();
 
 
 function control(e){
-    if(e.key == 'ArrowUp' || e.key == ' ' || e.key == 'touchstart'){
+    if(e.key == 'ArrowUp' || e.key == ' '){
         jump();
     }
 }
 document.addEventListener('keydown', control)
+document.addEventListener('touchstart', () => jump())
