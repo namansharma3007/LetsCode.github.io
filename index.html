@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,18 +20,20 @@
     <!-- LINKING CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
-    <audio autoplay loop>
-        <source src="./assets/sound/rain.mp3"/>
+    <audio id="myAudio" controls autoplay="true" loop="true">
+        <source src="./assets/sound/rain.mp3" type='audio/mpeg; codecs="mp3"' />
     </audio>
 
     <header class="header-container">
         <h1>Let's Code</h1>
-        <p class="text-wobble">Follow me on my socials for a behind-the-scenes look at my programming projects and learning journey</p>
+        <p class="text-wobble">Follow me on my socials for a behind-the-scenes look at my programming projects and
+            learning journey</p>
         <h3>I'm</h3>
         <h2>Naman Sharma</h2>
         <h4><span id="autoType"></span></h4>
-        
+
         <div class="links">
             <a href="https://www.linkedin.com/in/naman-sharma-b46950226" target="_blank" name="LinkedIn">
                 <i class="bi bi-linkedin"></i>
@@ -53,4 +56,5 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="./assets/js/script.js"></script>
 </body>
+
 </html>
