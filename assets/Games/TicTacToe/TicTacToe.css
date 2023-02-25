@@ -1,19 +1,25 @@
 /* CSS styles for the game */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Raleway', sans-serif;
 }
+
 body {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
     flex-direction: column;
+    background-image: url('../../images/background.png');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
 }
-h1{
+
+h1 {
     margin-bottom: 1rem;
 
 }
@@ -54,7 +60,7 @@ h1{
 
 /* Add some css for winning cells */
 .cell.win {
-    background-color: #7FFF00;
+    background-color: rgb(134, 245, 134)
 }
 
 
@@ -64,22 +70,17 @@ h1{
 }
 
 #reset-button {
-    margin-top: 10px;
-    border: 2px solid black;
-    padding: 5px;
-    border-radius: 5px;
-    width: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: -3px 3px 0 black;
-    transform: skewY(3deg);
-    transition: 400ms ease;
-    color: black;
-
+    margin: 1rem;
+    padding: 8px 20px;
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 20px;
+    border: none;
+    transition: 400ms ease-out;
 }
 
-#reset-button:focus{
-    box-shadow: -0px 0px 0 black;
-    translate: -4px 4px;
+#reset-button:hover {
+    background: rgb(116, 231, 116);
+    box-shadow: 3px 3px 10px rgb(116, 231, 116),
+                -3px -3px 10px rgb(116, 231, 116);
 }

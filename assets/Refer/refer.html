@@ -10,55 +10,19 @@
 
     <title>Lets Play</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Raleway', sans-serif;
-            text-decoration: none;
-        }
-
-        body {
-            background-color: rgb(230, 230, 250);
-        }
-
-        header {
-            width: 100%;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            gap: 1rem;
-        }
-
-        a {
-            border: 2px solid black;
-            padding: 5px;
-            border-radius: 5px;
-            width: max-content;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: -3px 3px 0 black;
-            transform: skewY(3deg);
-            transition: 400ms ease;
-            color: black;
-        }
-        a:hover{
-            box-shadow: -0px 0px 0 black;
-            translate: -4px 4px;
-        }
-    </style>
+    
+    <link rel="stylesheet" href="./refer.css">
 </head>
 
 <body>
 
     <header>
         <h2>Lets Play</h2>
-        <a href="../Games/Bounce/bounce.html" target="_blank">Bounce</a>
-        <a href="../Games/TicTacToe/TicTacToe.html" target="_blank">Tic Tac Toe</a>
+        <div class="buttons-links">
+            <a href="../Games/Bounce/bounce.html" target="_blank">Bounce</a>
+            <a href="../Games/TicTacToe/TicTacToe.html" target="_blank">Tic Tac Toe</a>
+            <a href="../Games/Snake/Snake.html" target="_blank">Snake</a>
+        </div>
     </header>
 
 </body>
