@@ -107,7 +107,7 @@ body {
     align-items: center;
     justify-self: center;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .description {
@@ -115,7 +115,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 70%;
+    width: 50%;
     gap: 2rem;
     position: relative;
     padding: 20px;
@@ -191,7 +191,16 @@ footer {
 
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1024px) {
+    .header-container{
+        height: 100vh;
+    }
+    .about-me{
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 900px) {
     .about-me {
         height: 70vh;
     }
