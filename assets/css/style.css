@@ -21,10 +21,6 @@ body {
     background-attachment: fixed;
 }
 
-:root {
-    --transition: all 400ms ease;
-}
-
 ::-webkit-scrollbar {
     /* for scroll bar on the left */
     display: none;
@@ -52,53 +48,15 @@ body {
     font-weight: 600;
 }
 
-
-
 .autoType {
     margin: 2px;
     display: flex;
     flex-wrap: wrap;
 }
 
-.game-link {
-    border: 2px solid black;
-    padding: 5px;
-    border-radius: 5px;
-    width: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: -3px 3px 0 black;
-    transform: skewY(3deg);
-    transition: var(--transition);
-    color: black;
-    width: max-content !important;
-    display: flex;
-    gap: 1rem;
-    position: relative;
-    animation: updown 1s infinite alternate;
-}
-
-.game-link:hover {
-    box-shadow: -0px 0px 0 black;
-    translate: -4px 4px;
-}
-
-.game-link:after {
-    content: attr(name);
-    font-weight: 500;
-    position: absolute;
-    bottom: -2rem;
-}
-
-@keyframes updown {
-    from {
-        top: 0;
-    }
-
-    to {
-        top: 10px;
-    }
+.game-button{
+    padding: 0 20px;
+    
 }
 
 .about-me {
@@ -119,8 +77,8 @@ body {
     gap: 2rem;
     position: relative;
     padding: 20px;
-    background-color: rgba(255, 255, 255, .15);   
-    background-color: rgba(255, 255, 255, .15);  
+    background-color: rgba(255, 255, 255, .15);
+    background-color: rgba(255, 255, 255, .15);
     backdrop-filter: blur(5px);
     border-radius: 5px;
 }
@@ -185,17 +143,18 @@ footer {
     opacity: 1;
 }
 
-.copyright{
+.copyright {
     position: absolute;
     bottom: 1rem;
 
 }
 
 @media screen and (max-width: 1024px) {
-    .header-container{
+    .header-container {
         height: 100vh;
     }
-    .about-me{
+
+    .about-me {
         margin-bottom: 5px;
     }
 }
@@ -204,7 +163,8 @@ footer {
     .about-me {
         height: 70vh;
     }
-    .description{
+
+    .description {
         width: 90%;
     }
 
@@ -226,6 +186,7 @@ footer {
     .links::after {
         width: 50px;
     }
+
     .button-links::after {
         font-size: 12px;
         top: -1rem;
